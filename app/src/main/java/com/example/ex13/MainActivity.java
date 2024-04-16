@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity
     {
         solve();
     }
-
     public void solve()
     {
         if (isValidNum(etA.getText().toString()) && (isValidNum(etB.getText().toString())) && (isValidNum(etC.getText().toString()))) {
