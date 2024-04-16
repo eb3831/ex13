@@ -8,37 +8,37 @@
     tools:context=".MainActivity" >
 
     <EditText
-        android:id="@+id/a"
+        android:id="@+id/etA"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:ems="10"
         android:hint="Enter a: "
-        android:inputType="numberSigned"
-        app:layout_constraintBottom_toTopOf="@+id/b"
+        android:inputType="number|numberDecimal|numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/etB"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/b"
+        android:id="@+id/etB"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:ems="10"
         android:hint="Enter b:"
-        android:inputType="numberSigned"
-        app:layout_constraintBottom_toTopOf="@+id/c"
+        android:inputType="number|numberDecimal|numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/etC"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/c"
+        android:id="@+id/etC"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="Enter c:"
-        android:inputType="numberSigned"
+        android:inputType="number|numberDecimal|numberSigned"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -49,6 +49,8 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
+        android:drawableTint="#FF80AB"
+        android:onClick="clickedRandom"
         android:text="Random"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
@@ -59,10 +61,13 @@
         android:id="@+id/button2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:drawableTint="#FF80AB"
+        android:onClick="clickedResult"
         android:text="Show result"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="477dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
